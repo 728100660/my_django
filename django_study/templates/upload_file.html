@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传文件</title>
+</head>
+<body>
+    <!-- enctype 将数据包进行加密 -->
+    <form action="{%url 'Upload_file:Upload_file'%}" method="POST" enctype="multipart/form-data">
+        <!-- {% csrf_token %} -->
+        <span>文件：</span>
+        <input type="file" name="icon"><br>
+        <input type="submit" value="上传文件">
+    </form>
+</body>
+</html>

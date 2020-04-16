@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- novalidate：不验证input 的 type 属性 -->
+    <!-- action：提交目标地址 -->
+    <form action="" >
+        <!-- autocomplete：自动填充，默认为开，（应该是通过缓存，给用户输入提示）
+        如，上次我输入用户名为”hello“，下次再点输入框可以直接点提示填写hello 填写密码时执行自动填充
+        input：输入框-->
+        <!-- autofocus：自动聚焦，相当与鼠标自动点击一下激活 -->
+        <!-- formenctype：描述表单提交属性数据编码 -->
+        <!-- formmethod：设置提交方式为post等 -->
+        <!-- formnovalidate:类似novalidate，不过这不是全局的，只是单条数据不验证 -->
+        <!-- formtarget:提交数据后的动作，打开新窗，“_blank”等赋值 -->
+        <!-- list:   <datelist>定义备选项 -->
+        <input list="b">
+        <datalist id="b">
+            <option value="BMW">
+            <option value="Ford">
+            <option value="Volvo">
+        </datalist><br>
+        <!-- max = ,min =  定义输入最大最小值 -->
+        <!-- step=3:步长，输入框里面有个增大，减小的箭头，0，3，6，9每次增大减小的值都是3，step=3 -->
+        <!-- multiple:（不用赋值）多媒体，可以在本机上面寻找文件上传，类似于添加附件 -->
+        <!-- pattern=正则表达式：规定用户输入模式-->
+        <!-- placeholder = "text"：适用于type = text，url，email，telephone，search 文本输入内容提示，如请输入密码-->
+        <!-- required：（无需赋值）输入框不能为空， -->
+        <!-- 文本控件 -->
+        <!-- input 标签的type 设置文本框 -->
+        <!-- value=“” 设置文本内默认值 -->
+        <!-- maxlength = ,minlength =  -->
+        <!-- type = 'radio' ：单选项 -->
+        你更喜欢哪一个？<br/>
+        <label ><input type="radio" name="fruit" value="fruit"/>水果</label><br>
+        <label><input type="radio" name="fruit" value="vegetable"/>蔬菜</label><br> 
+        <!-- type = 'checkbox' 复选项 -->
+        <!-- type = 'botton' 普通按钮 -->
+        <!-- type = 'reset'  重置按钮，将表单数据全部重置-->
+        姓名:<input type="text" name="username" placeholder="请输入您的姓名"><br>
+        E-mail:<input type="email" name="email"><br>
+        <!-- password与text差不多，只是password以黑点形式显示给用户 -->
+        密码:<input type="password" name="password" autocomplete="off" maxlength="15"><br>
+        <input type="submit" value="自定义名字提交">
+    </form>
+    <form action=""method="get">
+        你更喜欢哪一个？<br/>
+        <label ><input type="radio" name="fruit" value="fruit"/>水果</label><br>
+        <label><input type="radio" name="vegetable" value="vegetable"/>蔬菜</label><br> 
+    </form>
+</body>
+
+</html>

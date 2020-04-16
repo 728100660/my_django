@@ -1,0 +1,9 @@
+django-admin.py startproject ******
+py manage.py startapp Myapp
+在setting中注册Myapp
+ py manage.py runserver
+
+
+mysql驱动，
+mysqlclient
+pymysql

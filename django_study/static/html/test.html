@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 报错，静态资源中，不允许使用模板语法，动态获取url -->
+    <ol>
+        <li><a href="{%url 'TestUrl:test2' %}">gogogogo</a></li>
+        <li><a href="../../TestUrl/test2/">静态加载</a></li>
+        <li><a href="/TestUrl/test2/">静态加载</a></li>
+    </ol>
+    
+</body>
+</html>
